@@ -5,10 +5,13 @@
 	<link rel="stylesheet" href="post-haste.css">
 </head>
 <body>
-	<form action="http://www.hastebin.com/documents" method="post">
+	<form action="http://0.0.0.0:7777/documents/" method="get" id="mainForm">
 		<textarea name="data" id="data"></textarea>
 		<input type="submit" id="submit">
 	</form>
+	<!-- I've switched to jQuery for testing purposes. TODO: switch back to Zepto. -->
+	<!--<script src="zepto.min.js"></script>-->
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<script src="post-haste.js"></script>
 </body>
 </html>
